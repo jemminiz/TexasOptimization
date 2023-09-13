@@ -4,17 +4,6 @@ public class TexasOptimization
 {
     private final int BUBBA_SAVAGERY = 40;
     private final int LOWEST_TOUGHNESS = 15;
-    public int BubSav(int currSav)
-    {
-        for(int i = 0; i < 50; i++)
-        {
-            if(currSav < BUBBA_SAVAGERY)
-            {
-                return i;
-            }
-        }
-        return 0;
-    }
     public int Savagery(String famMem, int currSav)
     {
         
@@ -52,6 +41,11 @@ public class TexasOptimization
         System.out.print("Input family member: ");
         String famMem = scan.nextLine();
 
+        if(famMem.equals("Leatherface"))
+        {
+            System.out.print("If you're playing Leatherface, it is always optimal to run 50 Savagery simply because of his one-");
+            System.out.print("shot potential");
+        }
         scan.close();
     }
 }
