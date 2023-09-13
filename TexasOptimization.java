@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class TexasOptimization
 {
     private final int BUBBA_SAVAGERY = 40;
+    private final int LOWEST_TOUGHNESS = 15;
     public int BubSav(int currSav)
     {
         for(int i = 0; i < 50; i++)
@@ -43,5 +44,14 @@ public class TexasOptimization
         
 
         return 1;
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Input family member: ");
+        String famMem = scan.nextLine();
+
+        scan.close();
     }
 }
