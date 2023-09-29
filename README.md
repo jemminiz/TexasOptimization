@@ -2,7 +2,7 @@
  
 Written by @acquidity on discord
 
-Data gotten by the wiki (https://txchainsawgame.wiki.spellsandguns.com/The_Texas_Chain_Saw_Massacre_Wiki) testing thanks to 
+Data gotten by the wiki (https://txchainsawgame.wiki.spellsandguns.com/The_Texas_Chain_Saw_Massacre_Wiki) & testing thanks to 
 communities at @ScubanautSteve and @StarlitFox on Twitch!
 
 Started development 9/12/2023
