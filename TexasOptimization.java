@@ -5,14 +5,14 @@ public class TexasOptimization
     public static double Savagery(String famMem, int currSav)
     {
         if(famMem.equals("sissy") || famMem.equals("hitchhiker")) // Sissy and Hitchhiker have the same base damage, 
-                                                                                    // at 16
+                                                                                    // at 16, same as cook but with worse scaling
             return 16 + (8.0/25 * currSav - 8);
         else if(famMem.equals("johnny"))
             return 18 + (8.0/25 * currSav - 8);
         else if(famMem.equals("leatherface")) // Johnny and Leatherface have slightly different base damages, meaning different
                                                        // methods for each
             return 20 + (2.0/5 * currSav - 10);
-        else if(famMem.equals("cook")) // Cook has the same base damage as Sissy and Hitchhiker, but has a worse scaling,
+        else if(famMem.equals("cook")) // Cook has the same base damage as Sissy and Hitchhiker, but has a better scaling,
                                                 // using Leatherface's equation instead of the default one
             return 16 + (2.0/5 * currSav - 10);
 
