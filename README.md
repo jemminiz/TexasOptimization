@@ -1,4 +1,4 @@
-# TexasOptimization
+# TexasOptimizationCalculator
  
 Written by @acquidity on discord
 
