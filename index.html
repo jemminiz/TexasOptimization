@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html>
-
+<script src="TexasOptimizationCalc.js"></script>
 <head>
     <title>Texas Optimization Calculator</title>
 </head>
 
 <body>
-    <script>
-        function calc(char, sav, tough)
-        {
-
-        }
-    </script>
+    <p>Character: </p>
     <select name="character" id="char">
         <option value="Leatherface">Leatherface</option>
         <option value="Sissy">Sissy</option>
@@ -19,6 +14,8 @@
         <option value="Hitchhiker">Hitchhiker</option>
         <option value="Cook">Cook</option>
     </select>
+    <br>
+    <p>Savagery: </p>
     <select name="savagery" id="sav">
         <option value="10">10</option>
         <option value="11">11</option>
@@ -62,6 +59,8 @@
         <option value="49">49</option>
         <option value="50">50</option>
     </select>
+    <br>
+    <p>Toughness: </p>
     <select name="toughness" id="tough">
         <option value="10">10</option>
         <option value="11">11</option>
@@ -105,7 +104,8 @@
         <option value="49">49</option>
         <option value="50">50</option>
     </select>
-    <button title="Calculate" onclick=calc(Document.getElementById(char), Document.getElementById(sav), Document.getElementById(tough))>
+    <br><br>
+    <button title="Calculate" onclick="alert('It will take ' + (Math.trunc((calcSav(document.getElementById('char').value, document.getElementById('sav').value, document.getElementById('tough').value))) + 1) + ' hits to kill someone with ' + document.getElementById('tough').value + ' toughness')">
         Calculate
     </button>
 </body>
