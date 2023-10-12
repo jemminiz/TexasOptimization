@@ -105,9 +105,10 @@
         <option value="50">50</option>
     </select>
     <br><br>
-    <button title="Calculate" onclick="alert('It will take ' + (Math.trunc((calcSav(document.getElementById('char').value, document.getElementById('sav').value, document.getElementById('tough').value))) + 1) + ' hits to kill someone with ' + document.getElementById('tough').value + ' toughness')">
+    <button title="Calculate" onclick="calcSav(document.getElementById(char).value, document.getElementById(sav).value, document.getELementById(tough).value)">
         Calculate
     </button>
+    <p id="text">Click Calculate Button!</p>
 </body>
 
 </html>
