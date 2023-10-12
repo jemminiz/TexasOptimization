@@ -15,4 +15,5 @@ function calcSav(char, sav, tough)
         item.innerHTML = "It would take " + (tough * 1.11 + 83.25) / (16 + (8.0/25 * sav - 8)) + " to kill someone with " + tough + " toughness at " + sav + " savagery on Hitchhiker.";
     else
         item.innerHTML = "It would take " + (tough * 1.11 + 83.25) / (18 + (8.0/25 * sav - 8)) + " to kill someone with " + tough + " toughness at " + sav + " savagery on Johnny.";
+    return;
 }
